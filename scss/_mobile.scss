@@ -1,0 +1,15 @@
+// _mobile.scss
+// Responsive ab 700px
+@media (max-width: 700px) {
+  .hero {
+    height: 400px;
+
+    &-content {
+      text-align: center;
+      display: block;
+    }
+    lottie {
+      display: none;
+    }
+  }
+}

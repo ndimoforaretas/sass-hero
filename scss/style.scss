@@ -1,0 +1,66 @@
+@import "config"; // Set text color based on bg
+@import "utilities";
+@import "buttons";
+
+// _style.scss
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $light-color;
+  font-family: $font-stack;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hero {
+  background-color: $primary-color;
+  color: #fff;
+  height: 600px;
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    ul {
+      display: flex;
+      list-style-type: none;
+    }
+
+    li {
+      padding: 15px;
+    }
+    a:hover {
+      color: $secondary-color;
+    }
+  }
+
+  a {
+    color: #fff;
+  }
+
+  &-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+
+    h1 {
+      font-size: 50px;
+      line-height: 1.2;
+    }
+    p {
+      margin: 20px 0;
+    }
+  }
+}
+
+// import für Responsive Einstellungen
+@import "mobile";
